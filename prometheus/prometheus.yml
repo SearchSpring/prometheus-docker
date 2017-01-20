@@ -63,6 +63,6 @@ scrape_configs:
         - '{job="prometheus"}'
         - '{__name__=~"job:.*"}'
 
-  static_configs:
-    - targets:
-      - 'prometheus-east.prometheus.3c0e23da.svc.dockerapp.io:9090'
+    static_configs:
+      - targets:
+        - 'prometheus-east.prometheus.3c0e23da.svc.dockerapp.io:9090'

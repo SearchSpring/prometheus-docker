@@ -58,10 +58,10 @@ scrape_configs:
 
     metrics_path: '/federate'
 
-      params:
-    'match[]':
-      - '{job="prometheus"}'
-      - '{__name__=~"job:.*"}'
+    params:
+      'match[]':
+        - '{job="prometheus"}'
+        - '{__name__=~"job:.*"}'
 
   static_configs:
     - targets:

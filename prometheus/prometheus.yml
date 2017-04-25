@@ -49,6 +49,7 @@ scrape_configs:
            - 'haproxy-exporter-server-1:9101'
            - 'haproxy-exporter-server-2:9101'
            - 'es-exporter:9108'
+           - 'es-exporter-prod-west:9108'
 
   - job_name: 'federate'
 

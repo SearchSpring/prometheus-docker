@@ -31,8 +31,6 @@ scrape_configs:
          - targets:
            - 'localhost:9090'
            - 'cadvisor-1:8080'
-           - 'cadvisor-2:8080' 
            - 'node-exporter-1:9100'
-           - 'node-exporter-2:9100'
            - 'es-exporter-salukieastes:9108'
            - 'es-exporter-aceastes:9108'

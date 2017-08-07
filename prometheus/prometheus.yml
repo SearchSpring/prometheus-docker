@@ -33,4 +33,6 @@ scrape_configs:
            - 'cadvisor-1:8080'
            - 'node-exporter-1:9100'
            - 'es-exporter-salukieastes:9108'
+           - 'es-exporter-salukieastes-stats:9108'
            - 'es-exporter-aceastes:9108'
+           - 'es-exporter-aceastes-stats:9108'

@@ -49,6 +49,8 @@ scrape_configs:
            - 'haproxy-exporter-server-1:9101'
            - 'haproxy-exporter-server-2:9101'
            - 'es-exporter:9108'
+           - 'es-exporter-docker-west:9108'
+           - 'es-exporter-prod-east:9108'
            - 'es-exporter-prod-west:9108'
            - 'apache-expoter-ui1:9117'
            - 'apache-expoter-ui2:9117'

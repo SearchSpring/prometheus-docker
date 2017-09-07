@@ -1,5 +1,7 @@
 FROM prom/prometheus
 
+VOLUME /etc/prometheus
+
 COPY prometheus/* /etc/prometheus/
 
 EXPOSE 9090

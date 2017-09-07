@@ -35,5 +35,6 @@ scrape_configs:
 
   - job_name: 'prometheus-file-service-discovery'
     scrape_interval: 5s
-    files:
-      - '/etc/prometheus/file-sd-*.json'
+    file_sd_configs:
+      files:
+        - '/etc/prometheus/file-sd-*.json'

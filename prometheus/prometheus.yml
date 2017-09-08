@@ -30,25 +30,6 @@ scrape_configs:
     static_configs:
          - targets:
            - 'localhost:9090'
-           - 'cadvisor-1:8080'
-           - 'cadvisor-2:8080' 
-           - 'cadvisor-3:8080' 
-           - 'cadvisor-4:8080' 
-           - 'cadvisor-5:8080'
-           - 'cadvisor-6:8080'
-           - 'cadvisor-7:8080' 
-           - 'cadvisor-8:8080' 
-           - 'node-exporter-1:9100'
-           - 'node-exporter-2:9100'
-           - 'node-exporter-3:9100'
-           - 'node-exporter-4:9100'
-           - 'node-exporter-5:9100'
-           - 'node-exporter-6:9100'
-           - 'node-exporter-7:9100'
-           - 'node-exporter-8:9100'
-           - 'node-exporter-9:9100'
-           - 'node-exporter-11:9100'
-           - 'node-exporter-12:9100'
            - 'haproxy-exporter-server-1:9101'
            - 'haproxy-exporter-server-2:9101'
            - 'es-exporter:9108'
@@ -59,6 +40,12 @@ scrape_configs:
            - 'apache-expoter-ui3:9117'
            - 'apache-expoter-ui4:9117'
 
+
+  - job_name: 'prometheus-file-service-discovery'
+    scrape_interval: 5s
+    file_sd_configs:
+      - files:
+          - '/etc/prometheus/file-sd-*.json'
 
   - job_name: 'federate'
 

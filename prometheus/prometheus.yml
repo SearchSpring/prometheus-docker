@@ -63,3 +63,4 @@ scrape_configs:
     static_configs:
       - targets:
         - 'prometheus-east.prometheus.3c0e23da.svc.dockerapp.io:9090'
+        - '10.0.32.37:32306'
